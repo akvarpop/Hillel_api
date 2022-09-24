@@ -1,4 +1,4 @@
-SERVICE_URL = "https://www.aqa.science/"
+SERVICE_URL = ""
 
 USER_POPRAVKA = {
     "username": "Popravka",
