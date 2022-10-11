@@ -45,3 +45,5 @@ def test_delete_user(test_find_new_user_url):
 def test_check_delete_user(test_go_page_users_create_json_all_users):
     name_user = check_create_user_by_name(USER_POPRAVKA["username"])
     assert name_user != USER_POPRAVKA["username"], GlobalErrorMessage.USER_NOT_DELETE
+
+print(check_create_user_by_name)
