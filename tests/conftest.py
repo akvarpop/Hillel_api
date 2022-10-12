@@ -2,6 +2,10 @@ import pytest
 import requests
 import json
 from resources.data_json_on_python import URL_ENDPOINT, NAME_ADMIN, PASSWORD_ADMIN
+import pathlib
+from pathlib import Path
+
+path = Path(pathlib.Path.cwd().parent, "tests", "new_user_page.json")
 
 
 @pytest.fixture
@@ -36,6 +40,6 @@ def test_go_page_users_create_json_all_users(test_find_page_users):
 
 @pytest.fixture
 def test_find_new_user_url():
-    with open('/Users/antongrunt/Desktop/project/Hillel_api/tests/new_user_page.json', 'r') as file:
+    with open(path, 'r') as file:
         data = json.load(file)
         return data['url']

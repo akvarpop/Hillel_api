@@ -1,13 +1,16 @@
 import requests
 import json
-
 from configuration import USER_POPRAVKA, USER_POPRAVKA_CHANGE
 from resources.data_json_on_python import URL_ENDPOINT, NAME_ADMIN, PASSWORD_ADMIN
 from src.enums.global_enums import GlobalErrorMessage
+import pathlib
+from pathlib import Path
+
+path = Path(pathlib.Path.cwd().parent, "tests", "response.json")
 
 
 def check_create_user_by_name(result):
-    with open('/Users/antongrunt/Desktop/project/Hillel_api/tests/response.json', 'r') as file:
+    with open(path, 'r') as file:
         data = json.load(file)
     for item in data:
         value = item.get("username", None)
