@@ -6,7 +6,7 @@ from src.enums.global_enums import GlobalErrorMessage
 import pathlib
 from pathlib import Path
 
-path = Path(pathlib.Path.cwd().parent, "tests", "response.json")
+path = Path(pathlib.Path.cwd(), "response.json")
 
 
 def check_create_user_by_name(result):
