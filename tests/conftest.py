@@ -5,7 +5,7 @@ from resources.data_json_on_python import URL_ENDPOINT, NAME_ADMIN, PASSWORD_ADM
 import pathlib
 from pathlib import Path
 
-path = Path(pathlib.Path.cwd().parent, "tests", "new_user_page.json")
+path = Path(pathlib.Path.cwd(), "new_user_page.json")
 
 
 @pytest.fixture
