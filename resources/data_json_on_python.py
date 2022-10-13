@@ -2,7 +2,7 @@ import json
 import pathlib
 from pathlib import Path
 
-path = Path(pathlib.Path.cwd(), "data.json")
+path = Path(pathlib.Path.home(), "data.json")
 
 with open(path, 'r') as f:
     secret_variables = json.load(f)
