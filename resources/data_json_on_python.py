@@ -2,9 +2,9 @@ import json
 import pathlib
 from pathlib import Path
 
-path = Path(pathlib.Path.cwd(), "Hillel_api", "resources",  "data.json")
+# path = Path(pathlib.Path.cwd(), "Hillel_api", "resources",  "data.json")
 
-with open(path, 'r') as f:
+with open("../resources/data.json", 'r') as f:
     secret_variables = json.load(f)
 
 NAME_ADMIN = secret_variables['name']
